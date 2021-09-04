@@ -1,0 +1,14 @@
+$secondary: #907A7B;
+.warning{
+  margin-bottom: 104px;
+  @include pad {
+    margin-bottom: 80px;
+  }
+}
+
+.booking {
+  a {
+    border-radius: 16px;
+
+  }
+}

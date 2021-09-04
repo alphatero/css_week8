@@ -58,3 +58,22 @@ var swiper = new Swiper('.mySwiper_3', {
     clickable: true
   },
 });
+
+var swiper = new Swiper('.mySwiper4', {
+
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  slidesPerGroup: 1,
+  autoplay: {
+    delay: 3000 
+
+  },
+  loop: true,
+  loopFillGroupWithBlank: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+});
+
+AOS.init();
