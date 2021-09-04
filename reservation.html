@@ -1,10 +1,73 @@
----
-title: 立即預約
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>立即預約</title>
+    <link
+    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+    rel="stylesheet"
+  />
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper/swiper-bundle.min.css"
+/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/all.css" />
+  </head>
 
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img class="logo" src="./assets/images/DOYOGA-logo.png" alt=""
+        /></a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <div class="d-flex flex-column gap-1 menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="flex-grow-1"></div>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-grow-1 gap-4">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#"
+                >課程介紹</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="surroundings.html">瑜珈空間</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">當月課表</a>
+            </li>
+          </ul>
+          <div class="d-flex justify-content-end">
+            <a class="btn btn-outline-primary nav-button" href="reservation.html">立即預約</a>
+            <a class="btn btn-outline-primary ms-4 nav-button" href="contactus.html">聯絡我們</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+    
 <section class="booking py-5">
   <div class="container">
     <div class="d-flex flex-column align-items-center mb-4">
@@ -141,3 +204,58 @@ current: index
     </div>
   </div>
 </section>
+
+
+    <footer class="footer bg-secondary text-white pt-4">
+      <div class="container">
+        <div class="d-flex flex-lg-row flex-column mb-4 justify-content-between w-full">
+          <p class="fs-3 mb-2 flex-1">現在訂閱，獲得課程優惠碼！</p>
+          <div class="input-group mb-2 justify-content-lg-end w-auto">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="輸入您的電子信箱"
+              aria-label="email"
+              aria-describedby="button-addon2"
+            />
+            <button
+              class="btn btn-primary text-white"
+              type="button"
+              id="button-addon2"
+            >
+              訂閱
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="border border-white"></div>
+      <div class="container mt-4 d-flex justify-content-between">
+        <ul class="d-flex flex-column list-unstyled gap-2">
+          <li><img class="logo" src="./assets/images/DOYOGA.png" alt=""></li>
+          <li>課程介紹</li>
+          <li>瑜珈空間</li>
+          <li>當月課表</li>
+          <p class="d-sm-block d-md-none ">© 2021. All Rights Reserved.</p>
+        </ul>
+        <p class="d-none d-md-block align-self-end">© 2021. All Rights Reserved.</p>
+        <ul class="d-flex list-unstyled gap-2">
+          <li><img class="icon" src="./assets/images/facebook.svg" alt="facebook"></li>
+          <li><img class="icon" src="./assets/images/ig.svg" alt="ig"></li>
+          <li><img class="icon" src="./assets/images/line.svg" alt="ig"></li>
+        </ul>
+      </div>
+    </footer>
+
+    <nav class="position-fixed top-50 end-0 translate-middle-y me-3 d-none d-lg-block z-2">
+      <ul class="list-unstyled mb-0 right-list d-flex flex-column gap-2">
+        <li><img class="icon" src="./assets/images/facebook_right.svg" alt="facebook"></li>
+        <li><img class="icon" src="./assets/images/ig_right.svg" alt="facebook"></li>
+        <li><img class="icon" src="./assets/images/line_right.svg" alt="facebook"></li>
+      </ul>
+    </nav>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>
